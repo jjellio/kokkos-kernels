@@ -366,16 +366,24 @@ Kokkos::View<const Kokkos::complex<float>*, LAYOUT, Kokkos::Device<ExecSpace, ME
 };
 
 KOKKOSBLAS1_DDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, true)
+KOKKOSBLAS1_DDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, true)
 KOKKOSBLAS1_DDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, false)
+KOKKOSBLAS1_DDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, false)
 
 KOKKOSBLAS1_SDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, true)
+KOKKOSBLAS1_SDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, true)
 KOKKOSBLAS1_SDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, false)
+KOKKOSBLAS1_SDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, false)
 
 KOKKOSBLAS1_ZDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, true)
+KOKKOSBLAS1_ZDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, true)
 KOKKOSBLAS1_ZDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, false)
+KOKKOSBLAS1_ZDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, false)
 
 KOKKOSBLAS1_CDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, true)
+KOKKOSBLAS1_CDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, true)
 KOKKOSBLAS1_CDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, false)
+KOKKOSBLAS1_CDOT_TPL_SPEC_DECL_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, false)
 
 }
 }

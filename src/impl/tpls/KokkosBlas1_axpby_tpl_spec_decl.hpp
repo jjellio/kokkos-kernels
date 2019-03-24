@@ -364,16 +364,24 @@ struct Axpby< \
 };
 
 KOKKOSBLAS1_DAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, true)
+KOKKOSBLAS1_DAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, true)
 KOKKOSBLAS1_DAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, false)
+KOKKOSBLAS1_DAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, false)
 
 KOKKOSBLAS1_SAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, true)
+KOKKOSBLAS1_SAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, true)
 KOKKOSBLAS1_SAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, false)
+KOKKOSBLAS1_SAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, false)
 
 KOKKOSBLAS1_ZAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, true)
+KOKKOSBLAS1_ZAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, true)
 KOKKOSBLAS1_ZAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, false)
+KOKKOSBLAS1_ZAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, false)
 
 KOKKOSBLAS1_CAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, true)
+KOKKOSBLAS1_CAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, true)
 KOKKOSBLAS1_CAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaSpace, false)
+KOKKOSBLAS1_CAXPBY_CUBLAS( Kokkos::LayoutLeft, Kokkos::CudaUVMSpace, false)
 
 #undef KOKKOSBLAS1_DAXPBY_CUBLAS
 #undef KOKKOSBLAS1_SAXPBY_CUBLAS
